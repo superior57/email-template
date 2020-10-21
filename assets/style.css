@@ -1,23 +1,21 @@
 @font-face {
 	font-family: 'Housky Demo';
-	src: url('fonts/Housky Demo.ttf');
+	src: url('https://epic-euclid-115a5f.netlify.app/assets/fonts/Housky Demo.ttf');
 }
 
 @font-face {
 	font-family: 'Anton';
-	src: url('fonts/Anton-Regular.ttf');
+	src: url('https://epic-euclid-115a5f.netlify.app/assets/fonts/Anton-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Gotham Light Regular';
-	src: url('fonts/Gotham Light Regular.otf');
+	src: url('https://epic-euclid-115a5f.netlify.app/assets/fonts/Gotham%20Light%20Regular.ttf');
 }
-
 @font-face {
 	font-family: 'Poppins-ExtraLight';
-	src: url('fonts/Poppins-ExtraLight.otf');
+	src: url('https://epic-euclid-115a5f.netlify.app/assets/fonts/Poppins-ExtraLight.ttf');
 }
-
 * {
 	margin:0;
 	padding: 0;
@@ -196,7 +194,7 @@ a:hover {
 }
 
 .ml-10{
-	margin-left:20px;
+	margin-left:15px;
 }
 
 .bottom_round{
@@ -232,7 +230,7 @@ a:hover {
 }
 
 .poppins {
-	font-family: 'Poppins-ExtraLight';
+	/*font-family: 'Poppins-ExtraLight'*/
 	color:#6dc9c6;
 	position: absolute;
 	bottom:40px;
@@ -242,10 +240,14 @@ a:hover {
 .poppins a {
 	color:#6dc9c6;
 }
-
- .footer_font {
+.deliver {
+	color:#6dc9c6;
+	font-size: 120px;
+	font-family: "Housky Demo";
+}
+/* .footer_font {
  	font-size: 20px;
- }
+ }*/
 
 @media only screen and (max-width: 1200px) {
  	
@@ -329,6 +331,7 @@ a:hover {
 	}
 	.animation {
 		font-size: 70px;
+		font-family: "Housky Demo";
 	}
 	.blackbox_contaner {
 		display: block;

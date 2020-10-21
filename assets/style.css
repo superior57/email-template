@@ -28,21 +28,52 @@ body {
 
 .main {
 	background-color: #454f50;
+	overflow: hidden;
 }
 
 .header_housky {
 	font-family: "Housky Demo";
 }
-
+.header_housky div {
+	padding-left: 50px;
+}
 .header_housky h1 {
-	font-size: 120px;
+	font-size: 140px;
 }
 
 .header_housky p {
 	color:#6dc9c6;
-	font-size: 70px;
+	font-size: 100px;
+	line-height: 60px;
+}
+.header_image_border {
+	width: 760px;
+     height: 760px;
+     border:70px solid #6dc9c6;
+     border-radius: 50%;
+     position: absolute;
+     top:-270px;
+}
+.header_vertical_line{
+	position: absolute;
+	width:2px;
+	height: 300px;
+	background-color: #d6a97a;
+	left:150px;
+	top:407px;
+}
+.header_image_container {
+	position: relative;
+}
+.header_image_container img {
+	position: absolute;
+	right: 0;
 }
 
+.gold{
+	position: absolute;
+	top:700px;
+}
 .container{
 	padding: 0;
 }
@@ -59,10 +90,12 @@ a:hover {
 
 .anton {
 	font-family: 'Anton';
+	font-size:30px;
 }
 
 .gotham {
 	font-family: 'Gotham Light Regular';
+	font-size: 20px;
 }
 
 .line_container {
@@ -100,11 +133,14 @@ a:hover {
 .service {
 	clear:both;
 	font-family: 'Gotham Light Regular';
+	font-size:20px;
 }
-
+.service div {
+	padding-left: 50px;
+}
 .service_head {
-	margin-bottom: 30px;
-	font-size: 40px;
+	/*margin-bottom: 50px;*/
+	font-size: 50px;
 	display: block;
 	/*font-family: 'Anton'*/
 }
@@ -116,19 +152,33 @@ a:hover {
 }
 
 .service_bottom {
-	margin-top: 100px;
+	margin-top: 140px;
 }
 
 .service_image {
-	display: flex;
-	align-items: center;
-	height: 800px;
+	position: relative;
+	height: 1000px;
 }
-
+.service_image img {
+	position: absolute;
+	right: 0;
+	top:150px;
+}
+.quarter-circle-top-right{
+     width: 330px;
+     height: 330px;
+     border-bottom:70px solid #6dc9c6;
+     border-left:70px solid #6dc9c6;
+     border-radius: 0 0 0 330px;
+     position: absolute;
+     top:400px;
+     /*left:30px;*/
+}
 .blackbox_contaner {
 	clear: both;
 	display: flex;
 	align-items: center;
+	padding-left:50px;
 }
 
 .blackbox {
@@ -150,28 +200,48 @@ a:hover {
 	font-family: 'Housky Demo';
 	color:#6dc9c6;
 	font-size: 120px;
-	padding: 20px;
+	padding: 20px 20px 20px 50px;
 	line-height: 70px;
 	position: relative;
 	height: 200px;
 }
 
 #animation {
-	position: absolute;
+	/*position: absolute;
 	top:10px;
-	left:-50px;
-	visibility: hidden;
-	transition-duration: 1s;
+	left:-1000px;*/
+	color:#6dc9c6;
+	animation-name: flash;
+	/*animation-delay: 0.5s;*/
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
 }
-
+@keyframes flash {
+	0% {color:#6dc9c6;}
+	50% {color:#d6a97a;}
+	100% {color:#6dc9c6;}
+}
 .image_container {
 	text-align: center;
 }
-
-.brush img {
-	width:100%;
+.brush_container {
+	position: relative;
+	width: 100%;
 }
-
+.brush_container img {
+	position: absolute;
+	top:100px;
+}
+.quarter-circle-bottom-left{
+    width: 310px;
+     height: 310px;
+     border-top:70px solid #6dc9c6;
+     border-right:70px solid #6dc9c6;
+     border-radius: 0 310px 0 0;
+     position: absolute;
+     top:30px;
+     left:70px;
+}
 .bottom {
 	clear:both;
 	height: 500px;
@@ -182,6 +252,16 @@ a:hover {
 	position: absolute;
 	bottom:-500px;
 	left: 0;
+}
+.bottom_ring {
+	width:770px;
+	height: 770px;
+	border:70px solid #6dc9c6;
+	background-color: transparent;
+	position: absolute;
+	border-radius: 50%;
+	left:-205px;
+	top:10px;
 }
 .col-xs-6 {
 	padding:0;
@@ -194,7 +274,7 @@ a:hover {
 }
 
 .ml-10{
-	margin-left:15px;
+	margin-left:25px;
 }
 
 .bottom_round{
@@ -236,14 +316,18 @@ a:hover {
 	bottom:40px;
 	right:50px;
 	background-color: #454f50;
+	font-size: 20px;
+
 }
 .poppins a {
 	color:#6dc9c6;
+	padding-top: 30px;
 }
 .deliver {
 	color:#6dc9c6;
 	font-size: 120px;
 	font-family: "Housky Demo";
+	line-height: 80px;
 }
 /* .footer_font {
  	font-size: 20px;
